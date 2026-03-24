@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@llm-ide/gateway": ["packages/gateway/src"],
+      "@llm-ide/mcp-server": ["packages/mcp-server/src"],
+      "@llm-ide/context-engine": ["packages/context-engine/src"],
+      "@llm-ide/error-collector": ["packages/error-collector/src"]
+    }
+  },
+  "references": [
+    { "path": "packages/gateway" },
+    { "path": "packages/mcp-server" },
+    { "path": "packages/context-engine" },
+    { "path": "packages/error-collector" }
+  ],
+  "exclude": ["node_modules", "dist", ".next"]
+}

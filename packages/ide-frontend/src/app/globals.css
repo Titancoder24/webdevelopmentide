@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* Dark theme (default) — VS Code Dark+ inspired */
+:root {
+  --editor-bg: #1e1e1e;
+  --editor-fg: #d4d4d4;
+  --editor-line: #2a2a2a;
+  --editor-selection: rgba(38, 79, 120, 0.6);
+  --editor-cursor: #aeafad;
+  --sidebar-bg: #181818;
+  --sidebar-fg: #cccccc;
+  --sidebar-hover: #2a2d2e;
+  --sidebar-active: #37373d;
+  --sidebar-border: #2b2b2b;
+  --panel-bg: #1e1e1e;
+  --panel-fg: #cccccc;
+  --panel-border: #2b2b2b;
+  --tab-active: #1e1e1e;
+  --tab-inactive: #2d2d2d;
+  --tab-border: #2b2b2b;
+  --terminal-bg: #1a1a1a;
+  --terminal-fg: #cccccc;
+  --status-bar: #007acc;
+  --status-fg: #ffffff;
+  --color-error: #f14c4c;
+  --color-warning: #cca700;
+  --color-success: #89d185;
+  --color-info: #3794ff;
+}
+
+/* Light theme */
+.light {
+  --editor-bg: #ffffff;
+  --editor-fg: #383a42;
+  --editor-line: #f5f5f5;
+  --editor-selection: rgba(173, 214, 255, 0.5);
+  --editor-cursor: #526fff;
+  --sidebar-bg: #f3f3f3;
+  --sidebar-fg: #616161;
+  --sidebar-hover: #e8e8e8;
+  --sidebar-active: #d6d6d6;
+  --sidebar-border: #e5e5e5;
+  --panel-bg: #ffffff;
+  --panel-fg: #383a42;
+  --panel-border: #e5e5e5;
+  --tab-active: #ffffff;
+  --tab-inactive: #ececec;
+  --tab-border: #e5e5e5;
+  --terminal-bg: #ffffff;
+  --terminal-fg: #383a42;
+  --status-bar: #007acc;
+  --status-fg: #ffffff;
+  --color-error: #e51400;
+  --color-warning: #bf8803;
+  --color-success: #388a34;
+  --color-info: #0066bf;
+}
+
+@theme inline {
+  --color-editor-bg: var(--editor-bg);
+  --color-editor-fg: var(--editor-fg);
+  --color-editor-line: var(--editor-line);
+  --color-editor-selection: var(--editor-selection);
+  --color-editor-cursor: var(--editor-cursor);
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-fg: var(--sidebar-fg);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-panel-bg: var(--panel-bg);
+  --color-panel-fg: var(--panel-fg);
+  --color-panel-border: var(--panel-border);
+  --color-tab-active: var(--tab-active);
+  --color-tab-inactive: var(--tab-inactive);
+  --color-tab-border: var(--tab-border);
+  --color-terminal-bg: var(--terminal-bg);
+  --color-terminal-fg: var(--terminal-fg);
+  --color-status-bar: var(--status-bar);
+  --color-status-fg: var(--status-fg);
+  --color-ide-error: var(--color-error);
+  --color-ide-warning: var(--color-warning);
+  --color-ide-success: var(--color-success);
+  --color-ide-info: var(--color-info);
+  --color-agent-claude: #D85A30;
+  --color-agent-gpt: #1D9E75;
+  --color-agent-gemini: #534AB7;
+  --color-agent-copilot: #185FA5;
+  --color-agent-generic: #D4537E;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  font-family: var(--font-sans);
+}
+
+/* xterm.js overrides */
+.xterm {
+  padding: 4px 8px;
+}
